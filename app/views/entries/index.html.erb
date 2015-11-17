@@ -1,0 +1,10 @@
+<h1>All Entries</h1>
+
+<ul id="entries">
+  <% @entries.each do |entry| %>
+    <li>
+      <%= link_to entry.title, entry_path(entry) %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Create a New Entry", new_entry_path, class: 'new_entry' %>
