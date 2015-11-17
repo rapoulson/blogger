@@ -15,5 +15,6 @@ class EntriesController < ApplicationController
     @entry = Entry.new
     @entry.title = params[:entry][:title]
     @entry.save
+    redirect_to entry_path(@entry)
   end
 end
