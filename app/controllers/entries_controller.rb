@@ -8,5 +8,6 @@ class EntriesController < ApplicationController
   end
 
   def new
+    @entry = Entry.new
   end
 end
